@@ -1,0 +1,15 @@
+{
+  "verbose": true,
+  "ignore": [
+    "node_modules",
+    "dist",
+    "dist_dev",
+    "migration",
+    "logs",
+    "test",
+    "fake_data",
+    "dataChrome",
+    "data",
+    "data2"
+  ]
+}
