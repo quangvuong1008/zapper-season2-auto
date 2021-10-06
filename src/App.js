@@ -2,7 +2,7 @@ import puppeteer from "puppeteer";
 import * as dappeteer from "@dasanra/dappeteer";
 
 const ACCOUNT_NUMBER = 200;
-const PASSWORD = "password";
+const PASSWORD = "Vuonghy1999";
 const arrPk = [
 
 ];
@@ -200,7 +200,7 @@ async function autoClaim(browser, metamaskPage, i) {
     await page.bringToFront();
 
     // Close pop up
-    await sleep(500);
+    await sleep(2000);
     const xBtn = await page.$(".transaction-modal_close-button-container");
     console.log(" await sleep(5000);", xBtn);
     if (xBtn) await xBtn.click();
@@ -247,12 +247,12 @@ async function autoClaim(browser, metamaskPage, i) {
       await sleep(200);
       await page.bringToFront();
       console.log("BRING TO FRONT SIGN");
-      await sleep(500);
+      await sleep(2000);
     }
     // log out
   } catch (e) {
     console.log(e);
-    await sleep(50000);
+    await sleep(3000);
   }
   await page.close();
 }
